@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Locale;
 
 import entities.Product;
+import service.CalculationService;
 
 public class Program {
 
@@ -35,6 +36,9 @@ public class Program {
 			for (Product prod : products) {
 				System.out.println(prod);
 			}
+			System.out.println();
+			System.out.println("Big Price is: ");
+			System.out.println(CalculationService.max(null).toString());
 
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
