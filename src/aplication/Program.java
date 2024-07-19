@@ -36,9 +36,12 @@ public class Program {
 			for (Product prod : products) {
 				System.out.println(prod);
 			}
+			
+			
 			System.out.println();
-			System.out.println("Big Price is: ");
-			System.out.println(CalculationService.max(null).toString());
+			System.out.println("Most expensive is: ");
+			System.out.println(CalculationService.max(products));
+			
 
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
